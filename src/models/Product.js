@@ -1,6 +1,6 @@
 const database= require('../db/db.js');
 
-const Productos = class {
+const Product = class {
   constructor() {}
   
     static buscarProductos() {
@@ -56,4 +56,4 @@ const Productos = class {
     }
 }
   
-module.exports = Productos;
+module.exports = Product;

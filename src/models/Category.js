@@ -1,6 +1,6 @@
 const database = require('../db/db.js');
 
-const Categorias = class {
+const Category = class {
     constructor() {}
   
     static buscarCategorias() {
@@ -9,4 +9,4 @@ const Categorias = class {
     }
 }
   
-module.exports = Categorias;
+module.exports = Category;
