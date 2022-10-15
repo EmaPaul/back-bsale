@@ -13,8 +13,8 @@ app.use(morgan("dev"));
 app.use(cors());
 
 // rutas
-app.use("/api/products",require('./src/routes/product.js'));
-app.use("/api/categories",require('./src/routes/category.js'));
+app.use("/product",require('./src/routes/product.js'));
+app.use("/category",require('./src/routes/category.js'));
 
 // controlador de errores 
 app.use((err, req, res, next) => {
