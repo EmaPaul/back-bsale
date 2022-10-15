@@ -40,7 +40,7 @@ const Productos = class {
         sql += ` AND discount <= ?`;
         queries.push(discountmax);
       }
-      return db.execute(sql, queries);
+      return database.execute(sql, queries);
     }
 }
   
