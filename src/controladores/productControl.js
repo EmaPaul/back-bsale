@@ -13,7 +13,7 @@ exports.getProduct = async (req, res, next) => {
 exports.getProductbyId = async (req, res, next) => {
   try {
     const [product] = await Product.buscarId(req.params.id);
-    res.status(200).json({producto: product[0]});
+    res.status(200).json({product: product[0]});
   } catch (error) {
     console.log(error);
     next(error);
