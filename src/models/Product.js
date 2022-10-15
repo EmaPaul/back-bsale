@@ -16,43 +16,31 @@ const Productos = class {
     static findByFilters(name, category, pricemin, pricemax, discountmin, discountmax) {
       let sql = "SELECT * FROM product WHERE 1=1";
       let queries = [];
-      let parametro="Nombre";
-
-      switch(parametro) {
-        case "Nombre":
-          sql += ` AND name LIKE ?`;
-          queries.push(`%${name}%`);
-          break;
-        
-        case "Categoria":
-          sql += ` AND category LIKE ?`;
-          queries.push(`%${category}%`);
-          break;
-
-        case "PrecioMin":
-          sql += ` AND price >= ?`;
-          queries.push(pricemin);
-          break;
-        
-        case "PrecioMax":
-          sql += ` AND price <= ?`;
-          queries.push(pricemax);
-          break;
-        
-        case "DescuentoMin":
-          sql += ` AND discount >= ?`;
-          queries.push(discountmin);
-          break;
-        
-        case "DescuentoMax":
-          sql += ` AND discount <= ?`;
-          queries.push(discountmax);
-          break;
-        
-        default:
-          return parametro;
+      if (name) {
+        sql += ` AND name LIKE ?`;
+        queries.push(`%${name}%`);
       }
-      return database.execute(sql, queries);
+      if (category) {
+        sql += ` AND category LIKE ?`;
+        queries.push(`%${category}%`);
+      }
+      if (pricemin) {
+        sql += ` AND price >= ?`;
+        queries.push(pricemin);
+      }
+      if (pricemax) {
+        sql += ` AND price <= ?`;
+        queries.push(pricemax);
+      }
+      if (discountmin) {
+        sql += ` AND discount >= ?`;
+        queries.push(discountmin);
+      }
+      if (discountmax) {
+        sql += ` AND discount <= ?`;
+        queries.push(discountmax);
+      }
+      return db.execute(sql, queries);
     }
 }
   
