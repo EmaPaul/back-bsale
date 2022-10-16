@@ -15,32 +15,32 @@ const Productos = class {
   
     static buscarPorFiltros(name, category, pricemin, pricemax, discountmin, discountmax) {
       let sql = "SELECT * FROM product WHERE 1=1";
-      let queries = [];
+      let consultas = [];
       if (name) {
         sql += ` AND name LIKE ?`;
-        queries.push(`%${name}%`);
+        consultas.push(`%${name}%`);
       }
       if (category) {
         sql += ` AND category LIKE ?`;
-        queries.push(`%${category}%`);
+        consultas.push(`%${category}%`);
       }
       if (pricemin) {
         sql += ` AND price >= ?`;
-        queries.push(pricemin);
+        consultas.push(pricemin);
       }
       if (pricemax) {
         sql += ` AND price <= ?`;
-        queries.push(pricemax);
+        consultas.push(pricemax);
       }
       if (discountmin) {
         sql += ` AND discount >= ?`;
-        queries.push(discountmin);
+        consultas.push(discountmin);
       }
       if (discountmax) {
         sql += ` AND discount <= ?`;
-        queries.push(discountmax);
+        consultas.push(discountmax);
       }
-      return database.execute(sql, queries);
+      return database.execute(sql, consultas);
     }
 }
   
