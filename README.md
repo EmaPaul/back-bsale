@@ -5,6 +5,7 @@ los productos y sus categorias, al igual como filtrarlos por
 nombre, catergoria, precios y descuentos.
 
 <br/>
+
 <h2>Tecnologias Utilizadas</h2>
 <ul>
 <li>MYSQL: Sistema de gestión de bases de datos relacional.</li>
@@ -20,7 +21,6 @@ para realizar las configuraciones, al igual que node js para hacer las pruebas n
 configuraciones.Se utilizo dependecias como mysql2 para crear conecciones y consultas, y tambien dotenv para proteger 
 las variables de entorno. Por ultimo se utilizo nodemon para reiniciar el servidor cuando se realice un cambio y morgan para registrar cada una de las consultas que realiza a la api.
 
-<br/>
 
 <h2>Funcionamiento</h2>
 La api se conecta a una base de datos en MYSQL creando un pool de conecciones, que permiten estar conectado cuando alguna
@@ -28,11 +28,11 @@ coneccion termina por inactividad a esto se le llama keep alive, significa que e
 de cumplir con la solucitud, se crearon modelos para el funcionamiento de los controladores y rutas para los productos y las categorias.
 
 <br/>
+<br/>
 
 <h2>Documentacion</h2>
 
 <br/>
-
 
 ## Obtener productos 
 Se obtiene un objeto con una clave productos, y de valor una matriz donde estan todos los productos
