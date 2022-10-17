@@ -18,7 +18,7 @@ nombre, catergoria, precios y descuentos.
 
 Para empezar la creacion de la api se instalo express para crear nuestro entorno de trabajo, despues se utilizo javacript 
 para realizar las configuraciones, al igual que node js para hacer las pruebas necesarias y ver el funcionamiento de las 
-configuraciones.Se utilizo dependecias como mysql2 para crear conecciones y consultas, y tambien dotenv para proteger 
+configuraciones. Se utilizo dependecias como mysql2 para crear conecciones y consultas, y tambien dotenv para proteger 
 las variables de entorno. Por ultimo se utilizo nodemon para reiniciar el servidor cuando se realice un cambio y morgan para registrar cada una de las consultas que realiza a la api.
 
 
