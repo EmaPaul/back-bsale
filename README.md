@@ -107,7 +107,7 @@ GET: https://back-bsale-emapaul.vercel.app/product/search?name="nombre del produ
 <h1>Levantar el servidor de manera local</h1>
 <br/>
 
-Para laventar el servidor de manera local primero se debe crear un archivo .env en el cual debe contener la siguiente informacion.
+Para poder ejecutar el servidor de manera local primero se debe crear un archivo .env en el cual debe contener la siguiente informacion.
 
 ```
 DB_HOST=  "servidor de la base de datos"
