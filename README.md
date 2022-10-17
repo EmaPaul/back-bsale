@@ -25,7 +25,7 @@ las variables de entorno. Por ultimo se utilizo nodemon para reiniciar el servid
 <h2>Funcionamiento</h2>
 La api se conecta a una base de datos en MYSQL creando un pool de conecciones, que permiten estar conectado cuando alguna
 coneccion termina por inactividad a esto se le llama keep alive, significa que el servidor no cerrara la coneccion despues
-de cumplir con la solucitud, se crearon modelos para el funcionamiento de los controladores y rutas para los productos y las categorias.
+de cumplir con la solucitud. Se crearon modelos para el funcionamiento de los controladores y rutas para los productos y las categorias.
 
 <br/>
 <br/>
