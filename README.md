@@ -1,4 +1,4 @@
-<h1>API Bsale  <img style ="margin-left:15px; border-radius:30px"src="https://res.cloudinary.com/dltjb3yhc/image/upload/v1663220828/banner/iconoBsale_mkkwpk.jpg"/></h1>
+<h1>API Bsale  <img src="https://res.cloudinary.com/dltjb3yhc/image/upload/v1663220828/banner/iconoBsale_mkkwpk.jpg"/></h1>
 
 Api rest creada con MYSQL que nos permite obtener datos sobre 
 los productos y sus categorias, al igual como filtrarlos por 
